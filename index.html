@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <div class="calc-container">
+        <h1>Simple Calculator</h1>
+        <form id="calc-form" class="calc-form">
+            <input type="number" name="n1" id="n1" class="calc-num" placeholder="Primer numero.">
+            <input type="number" name="n2" id="n2" class="calc-num" placeholder="Segundo numero."><br>
+            <select name="opertations" id="math-op" class="math-op">
+                <option value="suma">Suma</option>
+                <option value="resta">Resta</option>
+                <option value="multi">Multipicacion</option>
+                <option value="division">Division</option>
+            </select>
+            <input class="submit" type="submit" value="Ejecutar">
+        </form>
+        <span>
+            <label>Resultado: </label><label id="result"></label>
+        </span>
+    </div>
+    <script src="./dist/script.js"></script>
+</body>
+</html>
